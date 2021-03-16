@@ -140,9 +140,9 @@ ul {
   grid-template-areas: 
   'hero'
   'project1'
-  'about'
   'project2'
-  'project3';
+  'project3'
+  'about';
 
   @include media(">desktop") {
     display: grid;
@@ -1053,19 +1053,16 @@ ul {
 }
 
 .container-contact {
-  position: relative;
-  background: linear-gradient(180deg, #390073 0%, #730068 100%);
+  background-color: #ffffff;
   width: 100%;
   height: 100%;
   @include media(">desktop"){
-    background: none;
-    background-color: #390073;
-    position: static;
     display: flex;
     justify-content: center;
   }
 
   .contactme {
+    text-align: center;
     width: 100%;
     height: 15em;
     display: flex;
@@ -1075,15 +1072,14 @@ ul {
 
     @include media(">desktop"){
       width: max-content;
-      transform: translate(-40%, 0);
     }
 
     .title-contact {
-      color: #ffffff;
+      color: #390073;
     }
 
     .mail {
-      color: #D0D0D0;
+      color: #63016B;
     }
   }
 }
